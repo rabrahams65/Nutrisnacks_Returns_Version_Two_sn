@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58BF0D4C-25FF-47EA-B1BD-9641140C3F8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nutrisnacks_Returns_Version_Two</RootNamespace>
+    <AssemblyName>Nutrisnacks_Returns_Version_Two</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\SSAS\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2019.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a" />
+    <Reference Include="Stimulsoft.Data, Version=2019.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a" />
+    <Reference Include="Stimulsoft.Report, Version=2019.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report.Win, Version=2019.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Stimulsoft Ultimate 2019.1.1\Libs\Reports.Net\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Child Forms\confirm_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child Forms\confirm_password.Designer.cs">
+      <DependentUpon>confirm_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child Forms\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child Forms\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child Forms\Faults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child Forms\Faults.Designer.cs">
+      <DependentUpon>Faults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child Forms\Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child Forms\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child Forms\Reps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child Forms\Reps.Designer.cs">
+      <DependentUpon>Reps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child Forms\Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child Forms\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\add_entry_ds.cs">
+      <DependentUpon>add_entry_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\add_entry_ds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>add_entry_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\current_record_ds.cs">
+      <DependentUpon>current_record_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\current_record_ds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>current_record_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Rpt_Returns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Rpt_Returns.Designer.cs">
+      <DependentUpon>Rpt_Returns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_in_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in_form.Designer.cs">
+      <DependentUpon>Log_in_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_form.Designer.cs">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="private_helpers.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Child Forms\confirm_password.resx">
+      <DependentUpon>confirm_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child Forms\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child Forms\Faults.resx">
+      <DependentUpon>Faults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child Forms\Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child Forms\Reps.resx">
+      <DependentUpon>Reps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child Forms\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in_form.resx">
+      <DependentUpon>Log_in_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_form.resx">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Dataset\add_entry_ds.xsc">
+      <DependentUpon>add_entry_ds.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\add_entry_ds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>add_entry_ds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\add_entry_ds.xss">
+      <DependentUpon>add_entry_ds.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\current_record_ds.xsc">
+      <DependentUpon>current_record_ds.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\current_record_ds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>current_record_ds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\current_record_ds.xss">
+      <DependentUpon>current_record_ds.xsd</DependentUpon>
+    </None>
+    <None Include="Data\Rep\Returns_Register_Record.mrt" />
+    <None Include="Data\Rep\Trend_Analysis.mrt" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\381599_error_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3209291_contacts_customers_family_group_team_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees-new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_shopping.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

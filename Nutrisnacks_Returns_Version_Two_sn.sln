@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutrisnacks_Returns_Version_Two", "Nutrisnacks_Returns_Version_Two\Nutrisnacks_Returns_Version_Two.csproj", "{58BF0D4C-25FF-47EA-B1BD-9641140C3F8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58BF0D4C-25FF-47EA-B1BD-9641140C3F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BF0D4C-25FF-47EA-B1BD-9641140C3F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BF0D4C-25FF-47EA-B1BD-9641140C3F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BF0D4C-25FF-47EA-B1BD-9641140C3F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {465FB188-604D-4EFE-8C45-0339835AC50E}
+	EndGlobalSection
+EndGlobal
