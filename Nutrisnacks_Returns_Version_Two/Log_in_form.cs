@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +18,7 @@ namespace Nutrisnacks_Returns_Version_Two
 
         private void Log_in_form_Load(object sender, EventArgs e)
         {
-             try
+            try
             {
                 this.returns_TableTableAdapter.Fill_current_record(this.current_record_ds.Returns_Table);
                 this.users_TableTableAdapter.FillBy_login_user(this.add_entry_ds.Users_Table);
@@ -34,6 +34,7 @@ namespace Nutrisnacks_Returns_Version_Two
             }
             
             
+            
         }
 
         private void label_close_Click(object sender, EventArgs e)
@@ -44,7 +45,7 @@ namespace Nutrisnacks_Returns_Version_Two
 
         private void btn_log_in_Click(object sender, EventArgs e)
         {
-             try
+            try
             {
                 //--------------------- Check if user exists ------------------------
                 string ep;
@@ -105,7 +106,6 @@ namespace Nutrisnacks_Returns_Version_Two
 
                 MessageBox.Show(ex.Message);
             }
-            //
         }
 
         //private void usernameComboBox_SelectedIndexChanged(object sender, EventArgs e)
